@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <title>Cafécin</title>
+    <!-- CSS only -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="../js/principal.js"></script> 
+  </head>
+  	
+  <body onload="cargaReloj()">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+          <img id="img_logo" src="../img/gato_carey_capu.png">
+        </div>
+        <div class="col-4 text-right">
+            <h4><span id="fecha" class="badge badge-secondary"></span></h4>
+            <h4><span id="reloj" class="badge badge-secondary"></span></h4>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <div class="col text-center">
+          <h1 class="display-4">CAFÉ EL GATO CAREY</h1>
+  			  <p>sabor | descanso | amor</p>
+        </div>
+      </div> 
+		</div>
+
+    <div class="container">
+		  <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header bg-success titulo_card">
+              <h4 class="card-title"> BEBIDAS </h4>
+            </div>
+            <ul id="bebidas" class="list-group list-group-flush">    
+            </ul>  
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header bg-warning titulo_card">
+              <h4 class="card-title"> PASTELES </h4>
+            </div>
+            <ul id="pasteles" class="list-group list-group-flush">    
+            </ul>  
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <div class="card-header bg-danger titulo_card">
+              <h4 class="card-title"> DULCES TRADICIONALES </h4>
+            </div>
+            <ul id="dulces" class="list-group list-group-flush">    
+            </ul>  
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="form-group list-group">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="form-group">
+              <h4>Agrega un producto a tu pedido</h4>
+            </div>
+            <div class="form-row align-items-center">
+              <div class="col-4">
+                <input id="inputProd" type="text" class="form-control" placeholder="Producto" required>
+              </div>
+              <div class="col-3">
+                <input id="inputPrecio" type="text" class="form-control" placeholder="Precio" required>
+              </div>
+              <div class="col-3">
+                <input id="inputCantidad" type="text" class="form-control" placeholder="Cantidad" required>
+              </div>
+              <div class="col-2 text-center">
+                <button type="button" class="btn btn-primary" onclick="sonVacios();">Agregar Compra</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="form-group">
+              <h4>Lista de pedido</h4>
+            </div>
+
+            <div class="form-row align-items-center">
+              <table class="table text-center">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Subtotal</th>
+                  </tr>                  
+                </thead> 
+                <tbody id="lpedido">
+                  
+                </tbody>               
+              </table>              
+            </div>
+          </li>
+          <li id="liTotal" class="list-group-item  bg-info">
+            <div class="form-row">
+                <div class="col-8"></div>
+                <div class="col-2 text-white"><h4>Total</h4></div>
+                <div id="total" class="col-2"></div>                
+              </div>
+          </li>
+
+        </ul>
+      </div>
+      <br>
+
+    <script type="text/javascript" src="../js/arreglos.js"></script>
+  </body>
+
+  <footer class="card-footer text-muted">
+
+    <div class="container text-center">
+      <a href="https://www.facebook.com"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.twitter.com"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="container text-center">© 2020 Copyright:
+      <a href="#"> CafeCarey.com</a>
+    </div>    
+
+  </footer>
+
+</html>
+
+

@@ -1,0 +1,18 @@
+#img_logo {
+	height: 100%;
+	width: 50%;
+}
+
+.titulo_card {
+	text-align : center;
+	color : white;
+}
+
+#liTotal {
+	display : none;
+}
+
+#total {
+	color : white;
+	font-size : 2vw; 
+}
